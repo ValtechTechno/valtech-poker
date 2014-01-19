@@ -39,6 +39,7 @@ Installing Valtech Poker
 
 Clone the repo and run:
 
+    bower install
     ./deploy.sh
 
 Have fun!
