@@ -1,24 +1,25 @@
 CACHE MANIFEST
 
-#version 1.1 1-18-2014
+#version 1.2 - Date: 01-19-2014
 
 CACHE:
 
 #images
-http://valtech-poker.cruchon.info/app/img/0.5.PNG
-http://valtech-poker.cruchon.info/app/img/1.PNG
-http://valtech-poker.cruchon.info/app/img/100.PNG
-http://valtech-poker.cruchon.info/app/img/13.PNG
-http://valtech-poker.cruchon.info/app/img/2.PNG
-http://valtech-poker.cruchon.info/app/img/20.PNG
-http://valtech-poker.cruchon.info/app/img/3.PNG
-http://valtech-poker.cruchon.info/app/img/40.PNG
-http://valtech-poker.cruchon.info/app/img/5.PNG
-http://valtech-poker.cruchon.info/app/img/8.PNG
-http://valtech-poker.cruchon.info/app/img/back.PNG
-http://valtech-poker.cruchon.info/app/img/break.PNG
-http://valtech-poker.cruchon.info/app/img/logo-valtech.png
-http://valtech-poker.cruchon.info/app/img/question.PNG
+img/0.5.PNG
+img/1.PNG
+img/100.PNG
+img/13.PNG
+img/2.PNG
+img/20.PNG
+img/3.PNG
+img/40.PNG
+img/5.PNG
+img/8.PNG
+img/back.PNG
+img/break.PNG
+img/favicon.png
+img/logo-valtech.png
+img/question.PNG
 
 NETWORK:
 *
