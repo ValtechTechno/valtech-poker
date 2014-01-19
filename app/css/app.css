@@ -1,0 +1,332 @@
+/* app css stylesheet */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+img:active{
+    background-color: transparent; /* Can be any colour, not just transparent */
+}
+
+a img {
+    border: 0 none;
+}
+
+#logo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#cards {
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+#cards li {
+    display: block;
+    float: left;
+    width: 30px;
+    margin: 5px;
+    float: left;
+}
+
+#flipper {
+    margin: 0 auto;
+    padding: 0;
+    width: 80px;
+    position: relative;
+	/* Animation*/
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+    perspective: 1000px;
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -webkit-transform 1s;
+	-o-transition: -o-transform 1s;
+	-ms-transition: -ms-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#flipper .card {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+}
+#flipper.flip {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.card img {
+    width: 100%;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+/*************** Media Queries ***************/
+
+/*------------- FOR LIST OF CARDS */
+
+/******* LANSCAPE *****/
+/* 6 by 2 */
+/* Width margins : 6 * 2 * 5 margin = 60px */
+@media all and (orientation : landscape) and (min-width : 240px){
+    #cards li { width: 30px; }
+}
+@media all and (orientation : landscape) and (min-width : 300px){
+    #cards li { width: 40px; }
+}
+@media all and (orientation : landscape) and (min-width : 360px){
+    #cards li { width: 50px; }
+}
+@media all and (orientation : landscape) and (min-width : 420px){
+    #cards li { width: 60px; }
+}
+@media all and (orientation : landscape) and (min-width : 480px){
+    #cards li { width: 70px; }
+}
+@media all and (orientation : landscape) and (min-width : 540px){
+    #cards li { width: 80px; }
+    #logo { width: 40px; }
+}
+@media all and (orientation : landscape) and (min-width : 600px){
+    #cards li { width: 90px; }
+    #logo { width: 45px; }
+}
+@media all and (orientation : landscape) and (min-width : 660px){
+    #cards li { width: 100px; }
+    #logo { width: 50px; }
+}
+@media all and (orientation : landscape) and (min-width : 720px){
+    #cards li { width: 110px; }
+    #logo { width: 55px; }
+}
+@media all and (orientation : landscape) and (min-width : 780px){
+    #cards li { width: 120px; }
+    #logo { width: 60px; }
+}
+@media all and (orientation : landscape) and (min-width : 840px){
+    #cards li { width: 130px; }
+    #logo { width: 65px; }
+}
+@media all and (orientation : landscape) and (min-width : 900px){
+    #cards li { width: 140px; }
+    #logo { width: 70px; }
+}
+@media all and (orientation : landscape) and (min-width : 960px){
+    #cards li { width: 150px; }
+    #logo { width: 75px; }
+}
+@media all and (orientation : landscape) and (min-width : 1080px){
+    #cards li { width: 170px; }
+    #logo { width: 85px; }
+}
+@media all and (orientation : landscape) and (min-width : 1200px){
+    #cards li { width: 190px; }
+    #logo { width: 95px; }
+}
+@media all and (orientation : landscape) and (min-width : 1320px){
+    #cards li { width: 210px; }
+    #logo { width: 105px; }
+}
+@media all and (orientation : landscape) and (min-width : 1500px){
+    #cards li { width: 240px; }
+    #logo { width: 115px; }
+}
+@media all and (orientation : landscape) and (min-width : 1680px){
+    #cards li { width: 270px; }
+    #logo { width: 115px; }
+}
+@media all and (orientation : landscape) and (min-width : 1860px){
+    #cards { width: 1860px; }
+    #cards li { width: 300px; }
+    #logo { width: 115px; }
+}
+
+/******* PORTRAIT *****/
+/* 4 by 3 */
+/* Width margins : 4 * 2 * 5 margin = 40px */
+@media all and (orientation : portrait) and (min-width : 160px){
+    #cards li { width: 30px; }
+}
+@media all and (orientation : portrait) and (min-width : 200px){
+    #cards li { width: 40px; }
+}
+@media all and (orientation : portrait) and (min-width : 240px){
+    #cards li { width: 50px; }
+}
+@media all and (orientation : portrait) and (min-width : 280px){
+    #cards li { width: 60px; }
+}
+@media all and (orientation : portrait) and (min-width : 320px){
+    #cards li { width: 70px; }
+    #logo { width: 35px; }
+}
+@media all and (orientation : portrait) and (min-width : 360px){
+    #cards li { width: 80px; }
+    #logo { width: 40px; }
+}
+@media all and (orientation : portrait) and (min-width : 400px){
+    #cards li { width: 90px; }
+    #logo { width: 45px; }
+}
+@media all and (orientation : portrait) and (min-width : 440px){
+    #cards li { width: 100px; }
+    #logo { width: 50px; }
+}
+@media all and (orientation : portrait) and (min-width : 480px){
+    #cards li { width: 110px; }
+    #logo { width: 55px; }
+}
+@media all and (orientation : portrait) and (min-width : 520px){
+    #cards li { width: 120px; }
+    #logo { width: 60px; }
+}
+@media all and (orientation : portrait) and (min-width : 560px){
+    #cards li { width: 130px; }
+    #logo { width: 65px; }
+}
+@media all and (orientation : portrait) and (min-width : 600px){
+    #cards li { width: 140px; }
+    #logo { width: 70px; }
+}
+@media all and (orientation : portrait) and (min-width : 640px){
+    #cards li { width: 150px; }
+    #logo { width: 75px; }
+}
+@media all and (orientation : portrait) and (min-width : 720px){
+    #cards li { width: 170px; }
+    #logo { width: 85px; }
+}
+@media all and (orientation : portrait) and (min-width : 800px){
+    #cards li { width: 190px; }
+    #logo { width: 95px; }
+}
+@media all and (orientation : portrait) and (min-width : 880px){
+    #cards li { width: 210px; }
+    #logo { width: 105px; }
+}
+@media all and (orientation : portrait) and (min-width : 1000px){
+    #cards li { width: 240px; }
+    #logo { width: 115px; }
+}
+@media all and (orientation : portrait) and (min-width : 1120px){
+    #cards li { width: 270px; }
+    #logo { width: 115px; }
+}
+@media all and (orientation : portrait) and (min-width : 1240px){
+    #cards li { width: 300px; }
+    #logo { width: 115px; }
+}
+@media all and (orientation : portrait) and (min-width : 1360px){
+    #cards li { width: 330px; }
+    #logo { width: 115px; }
+}
+@media all and (orientation : portrait) and (min-width : 1480px){
+    #cards li { width: 360px; }
+    #logo { width: 115px; }
+}
+@media all and (orientation : portrait) and (min-width : 1600px){
+    #cards li { width: 390px; }
+    #logo { width: 115px; }
+}
+@media all and (orientation : portrait) and (min-width : 1720px){
+    #cards li { width: 420px; }
+    #logo { width: 115px; }
+}
+@media all and (orientation : portrait) and (min-width : 1840px){
+    #cards { width: 1840px; }
+    #cards li { width: 450px; }
+    #logo { width: 115px; }
+}
+
+
+/*------------- FOR SINGLE CARD */
+
+@media all and (min-height : 150px){
+    #flipper, #flipper .card { max-width: 100%; width: 99px; }
+}
+@media all and (min-height : 170px){
+    #flipper, #flipper .card { max-width: 100%; width: 112px; }
+}
+@media all and (min-height : 190px){
+    #flipper, #flipper .card { max-width: 100%; width: 126px; }
+}
+@media all and (min-height : 210px){
+    #flipper, #flipper .card { max-width: 100%; width: 139px; }
+}
+@media all and (min-height : 230px){
+    #flipper, #flipper .card { max-width: 100%; width: 152px; }
+}
+@media all and (min-height : 250px){
+    #flipper, #flipper .card { max-width: 100%; width: 165px; }
+}
+@media all and (min-height : 270px){
+    #flipper, #flipper .card { max-width: 100%; width: 179px; }
+}
+@media all and (min-height : 290px){
+    #flipper, #flipper .card { max-width: 100%; width: 192px; }
+}
+@media all and (min-height : 310px){
+    #flipper, #flipper .card { max-width: 100%; width: 205px; }
+}
+@media all and (min-height : 350px){
+    #flipper, #flipper .card { max-width: 100%; width: 232px; }
+}
+@media all and (min-height : 400px){
+    #flipper, #flipper .card { max-width: 100%; width: 265px; }
+}
+@media all and (min-height : 450px){
+    #flipper, #flipper .card { max-width: 100%; width: 298px; }
+}
+@media all and (min-height : 500px){
+    #flipper, #flipper .card { max-width: 100%; width: 331px; }
+}
+@media all and (min-height : 550px){
+    #flipper, #flipper .card { max-width: 100%; width: 364px; }
+}
+@media all and (min-height : 600px){
+    #flipper, #flipper .card { max-width: 100%; width: 397px; }
+}
+@media all and (min-height : 700px){
+    #flipper, #flipper .card { max-width: 100%; width: 463px; }
+}
+@media all and (min-height : 800px){
+    #flipper, #flipper .card { max-width: 100%; width: 529px; }
+}
+@media all and (min-height : 900px){
+    #flipper, #flipper .card { max-width: 100%; width: 596px; }
+}

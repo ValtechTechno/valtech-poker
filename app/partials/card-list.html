@@ -1,0 +1,7 @@
+<ul id="cards">
+    <li class="card" ng-repeat="i in cards">
+        <img ng-src="img/{{ i }}.PNG" ng-click="showCard($index);" ng-touch="showCard($index);" />
+    </li>
+</ul>
+
+<img src="img/logo-valtech.png" alt="valtech_" id="logo" ng-click="goToValtech();" ng-touch="goToValtech();"/>

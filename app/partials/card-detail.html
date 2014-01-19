@@ -1,0 +1,8 @@
+<div id="flipper" ng-class="{'flip': isSelected }">
+    <div class="card front" ng-click="showBackSide($index);" ng-touch="showBackSide($index);">
+        <img src="img/back.PNG" />
+    </div>
+    <div class="card back">
+        <img ng-src="img/{{ card }}.PNG" ng-click="gotoCardList();" ng-touch="gotoCardList();" />
+    </div>
+</div>

@@ -1,0 +1,20 @@
+{
+  "name": "valtech-poker",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ValtechTechno/valtech-poker",
+  "authors": [
+    "Gilles CRUCHON <gilles.cruchon@gmail.com>"
+  ],
+  "description": "Valtech Poker helps you with requirement estimation when real planning poker cards aren't handy.",
+  "main": "app/index.html",
+  "keywords": [
+    "Valtech",
+    "Poker"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.7.1",
+    "shake.js": "~1.1.0"
+  }
+}
