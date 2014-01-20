@@ -15,6 +15,7 @@
   "private": true,
   "dependencies": {
     "modernizr": "~2.7.1",
-    "shake.js": "~1.1.0"
+    "shake.js": "~1.1.0",
+    "angularjs": "http://code.angularjs.org/1.2.9/angular-1.2.9.zip"
   }
 }
